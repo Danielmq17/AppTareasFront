@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <input type="text" [(ngModel)]="nombreTarea" (keyup.enter)="AgregarTarea()" class="form-control p-2" placeholder="Ingrese una tarea nueva...">
+        </div>
+    </div>
+</div>
+<div class="container card mt-5" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Lista de tareas:</strong></li>
+        
+        <li class="list-group-item mt-2" *ngFor="let tarea of listaTareas">
+            <input type="checkbox" style="margin-right: 20px;" name="" id="">
+            {{tarea.nombre}}
+            <span><mat-icon>restore_from_trash</mat-icon></span>
+        </li>
+    </ul>
+</div>

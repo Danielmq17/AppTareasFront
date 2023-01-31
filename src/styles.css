@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: rgb(83, 77, 77);
+    background: url('https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media (max-width: 1615px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
